@@ -1,0 +1,14 @@
+{
+  "base": "GBP",
+  "rates": {
+    "GBP": 1.0,
+    "USD": 1.27,
+    "EUR": 1.16,
+    "BTC": 0.000012,
+    "ETH": 0.00038,
+    "USDC": 1.27,
+    "USDT": 1.27
+  },
+  "updatedAt": "2025-03-25T00:00:00Z",
+  "note": "These are fallback rates. Live rates fetched from API when available."
+}

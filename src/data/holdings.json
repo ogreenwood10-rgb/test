@@ -1,0 +1,129 @@
+[
+  {
+    "id": "h1",
+    "assetId": "BTC",
+    "accountId": "ledger",
+    "quantity": 0.42,
+    "avgCostPerUnit": 28500,
+    "avgCostCurrency": "USD",
+    "notes": "Long-term cold storage",
+    "tags": ["core", "long-term"]
+  },
+  {
+    "id": "h2",
+    "assetId": "BTC",
+    "accountId": "coinbase",
+    "quantity": 0.08,
+    "avgCostPerUnit": 42000,
+    "avgCostCurrency": "USD",
+    "notes": "Trading allocation",
+    "tags": ["trading"]
+  },
+  {
+    "id": "h3",
+    "assetId": "ETH",
+    "accountId": "kraken",
+    "quantity": 3.5,
+    "avgCostPerUnit": 1800,
+    "avgCostCurrency": "USD",
+    "notes": "Staked on Kraken, ~4% APY",
+    "tags": ["staking", "yield"]
+  },
+  {
+    "id": "h4",
+    "assetId": "ETH",
+    "accountId": "ledger",
+    "quantity": 2.0,
+    "avgCostPerUnit": 2200,
+    "avgCostCurrency": "USD",
+    "notes": "Cold storage ETH",
+    "tags": ["core"]
+  },
+  {
+    "id": "h5",
+    "assetId": "SOL",
+    "accountId": "kraken",
+    "quantity": 45,
+    "avgCostPerUnit": 65,
+    "avgCostCurrency": "USD",
+    "notes": "Staked SOL, ~6.5% APY",
+    "tags": ["staking", "yield"]
+  },
+  {
+    "id": "h6",
+    "assetId": "LINK",
+    "accountId": "coinbase",
+    "quantity": 250,
+    "avgCostPerUnit": 8.5,
+    "avgCostCurrency": "USD",
+    "tags": []
+  },
+  {
+    "id": "h7",
+    "assetId": "USDC",
+    "accountId": "coinbase",
+    "quantity": 3500,
+    "avgCostPerUnit": 1,
+    "avgCostCurrency": "USD",
+    "notes": "Dry powder / stablecoin reserve",
+    "tags": ["cash", "stable"]
+  },
+  {
+    "id": "h8",
+    "assetId": "VUSA",
+    "accountId": "vanguard_isa",
+    "quantity": 320,
+    "avgCostPerUnit": 68.50,
+    "avgCostCurrency": "GBP",
+    "notes": "ISA core holding",
+    "tags": ["isa", "etf"]
+  },
+  {
+    "id": "h9",
+    "assetId": "VWRL",
+    "accountId": "vanguard_isa",
+    "quantity": 180,
+    "avgCostPerUnit": 92.00,
+    "avgCostCurrency": "GBP",
+    "notes": "Global diversification",
+    "tags": ["isa", "etf"]
+  },
+  {
+    "id": "h10",
+    "assetId": "AAPL",
+    "accountId": "trading212",
+    "quantity": 25,
+    "avgCostPerUnit": 155,
+    "avgCostCurrency": "USD",
+    "notes": "Individual stock",
+    "tags": ["equity"]
+  },
+  {
+    "id": "h11",
+    "assetId": "NVDA",
+    "accountId": "trading212",
+    "quantity": 15,
+    "avgCostPerUnit": 420,
+    "avgCostCurrency": "USD",
+    "notes": "AI/GPU play",
+    "tags": ["equity", "tech"]
+  },
+  {
+    "id": "h12",
+    "assetId": "GBP_CASH",
+    "accountId": "barclays_current",
+    "quantity": 4500,
+    "avgCostPerUnit": 1,
+    "avgCostCurrency": "GBP",
+    "notes": "Monthly expenses buffer"
+  },
+  {
+    "id": "h13",
+    "assetId": "GBP_CASH",
+    "accountId": "barclays_savings",
+    "quantity": 18000,
+    "avgCostPerUnit": 1,
+    "avgCostCurrency": "GBP",
+    "notes": "Emergency fund + 4.5% AER savings"
+  }
+]

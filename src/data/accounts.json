@@ -1,0 +1,58 @@
+[
+  {
+    "id": "coinbase",
+    "name": "Coinbase",
+    "type": "exchange",
+    "currency": "USD",
+    "platform": "Coinbase",
+    "notes": "Main crypto exchange"
+  },
+  {
+    "id": "ledger",
+    "name": "Ledger Hardware Wallet",
+    "type": "wallet",
+    "currency": "USD",
+    "platform": "Ledger",
+    "notes": "Cold storage"
+  },
+  {
+    "id": "vanguard_isa",
+    "name": "Vanguard ISA",
+    "type": "isa",
+    "currency": "GBP",
+    "platform": "Vanguard",
+    "notes": "Stocks & Shares ISA"
+  },
+  {
+    "id": "trading212",
+    "name": "Trading 212 GIA",
+    "type": "brokerage",
+    "currency": "GBP",
+    "platform": "Trading 212",
+    "notes": "General investment account"
+  },
+  {
+    "id": "barclays_current",
+    "name": "Barclays Current",
+    "type": "bank",
+    "currency": "GBP",
+    "platform": "Barclays",
+    "notes": "Main current account"
+  },
+  {
+    "id": "barclays_savings",
+    "name": "Barclays Savings",
+    "type": "bank",
+    "currency": "GBP",
+    "platform": "Barclays",
+    "notes": "Easy access savings"
+  },
+  {
+    "id": "kraken",
+    "name": "Kraken",
+    "type": "exchange",
+    "currency": "USD",
+    "platform": "Kraken",
+    "notes": "Staking + altcoins"
+  }
+]

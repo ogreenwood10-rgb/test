@@ -1,0 +1,99 @@
+[
+  {
+    "id": "BTC",
+    "symbol": "BTC",
+    "name": "Bitcoin",
+    "assetClass": "crypto",
+    "currency": "USD",
+    "coingeckoId": "bitcoin",
+    "isCash": false
+  },
+  {
+    "id": "ETH",
+    "symbol": "ETH",
+    "name": "Ethereum",
+    "assetClass": "crypto",
+    "currency": "USD",
+    "coingeckoId": "ethereum",
+    "isCash": false
+  },
+  {
+    "id": "SOL",
+    "symbol": "SOL",
+    "name": "Solana",
+    "assetClass": "crypto",
+    "currency": "USD",
+    "coingeckoId": "solana",
+    "isCash": false
+  },
+  {
+    "id": "LINK",
+    "symbol": "LINK",
+    "name": "Chainlink",
+    "assetClass": "crypto",
+    "currency": "USD",
+    "coingeckoId": "chainlink",
+    "isCash": false
+  },
+  {
+    "id": "USDC",
+    "symbol": "USDC",
+    "name": "USD Coin",
+    "assetClass": "crypto",
+    "currency": "USD",
+    "coingeckoId": "usd-coin",
+    "isCash": true
+  },
+  {
+    "id": "VUSA",
+    "symbol": "VUSA",
+    "name": "Vanguard S&P 500 ETF",
+    "assetClass": "equity",
+    "currency": "GBP",
+    "yahooSymbol": "VUSA.L",
+    "isCash": false
+  },
+  {
+    "id": "VWRL",
+    "symbol": "VWRL",
+    "name": "Vanguard All-World ETF",
+    "assetClass": "equity",
+    "currency": "GBP",
+    "yahooSymbol": "VWRL.L",
+    "isCash": false
+  },
+  {
+    "id": "AAPL",
+    "symbol": "AAPL",
+    "name": "Apple Inc.",
+    "assetClass": "equity",
+    "currency": "USD",
+    "yahooSymbol": "AAPL",
+    "isCash": false
+  },
+  {
+    "id": "NVDA",
+    "symbol": "NVDA",
+    "name": "NVIDIA Corporation",
+    "assetClass": "equity",
+    "currency": "USD",
+    "yahooSymbol": "NVDA",
+    "isCash": false
+  },
+  {
+    "id": "GBP_CASH",
+    "symbol": "GBP",
+    "name": "British Pound",
+    "assetClass": "cash",
+    "currency": "GBP",
+    "isCash": true
+  },
+  {
+    "id": "USD_CASH",
+    "symbol": "USD",
+    "name": "US Dollar",
+    "assetClass": "cash",
+    "currency": "USD",
+    "isCash": true
+  }
+]

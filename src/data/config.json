@@ -1,0 +1,10 @@
+{
+  "baseCurrency": "GBP",
+  "displayName": "My Portfolio",
+  "targetNetWorth": 1000000,
+  "targetPassiveIncome": 3000,
+  "targetBtcStack": 1.0,
+  "growthAssumptionPct": 8,
+  "contributionMonthly": 2000,
+  "yieldAssumptionPct": 4
+}

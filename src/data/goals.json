@@ -1,0 +1,37 @@
+[
+  {
+    "id": "g1",
+    "label": "Financial Independence",
+    "type": "net_worth",
+    "targetValue": 1000000,
+    "targetCurrency": "GBP",
+    "deadline": "2035-01-01",
+    "notes": "FIRE number"
+  },
+  {
+    "id": "g2",
+    "label": "1 BTC Stack",
+    "type": "crypto_stack",
+    "targetValue": 1.0,
+    "targetCurrency": "BTC",
+    "assetId": "BTC",
+    "notes": "Accumulate 1 full BTC"
+  },
+  {
+    "id": "g3",
+    "label": "£3,000/mo Passive Income",
+    "type": "passive_income",
+    "targetValue": 3000,
+    "targetCurrency": "GBP",
+    "notes": "Cover living costs with passive income"
+  },
+  {
+    "id": "g4",
+    "label": "House Deposit",
+    "type": "net_worth",
+    "targetValue": 80000,
+    "targetCurrency": "GBP",
+    "deadline": "2027-06-01",
+    "notes": "First property purchase deposit"
+  }
+]
