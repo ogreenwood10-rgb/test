@@ -3,7 +3,7 @@ import { fetchAllPrices } from "@/lib/data/prices";
 import { buildPortfolioSnapshot } from "@/lib/calculations/portfolio";
 import { calcGoalProgress, buildForecastScenarios } from "@/lib/calculations/goals";
 import { extractIncomeEvents, buildMonthlySummaries } from "@/lib/calculations/income";
-import { setFxRates, getFxRates } from "@/lib/utils/fx";
+import { setFxRates, fetchLiveFxRates } from "@/lib/utils/fx";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { GoalsView } from "@/components/goals/GoalsView";
 
@@ -17,8 +17,11 @@ export default async function GoalsPage() {
   const goals = getGoals();
   const config = getConfig();
 
-  setFxRates(getFxRates());
-  const prices = await fetchAllPrices(assets);
+  const [fxRates, prices] = await Promise.all([
+    fetchLiveFxRates(config.baseCurrency),
+    fetchAllPrices(assets),
+  ]);
+  setFxRates(fxRates);
   const assetsMap = new Map(assets.map((a) => [a.id, a]));
   const accountsMap = new Map(accounts.map((a) => [a.id, a]));
   const snapshot = buildPortfolioSnapshot(holdings, assetsMap, accountsMap, prices, transactions);

@@ -1,19 +1,20 @@
 import { getTransactions, getAssets, getAccounts, getConfig } from "@/lib/data/loader";
 import { extractIncomeEvents, buildMonthlySummaries, calcTotalIncome } from "@/lib/calculations/income";
-import { setFxRates, getFxRates } from "@/lib/utils/fx";
+import { setFxRates, fetchLiveFxRates } from "@/lib/utils/fx";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { StatTile } from "@/components/ui/StatTile";
 import { IncomeView } from "@/components/income/IncomeView";
 import { formatCurrency } from "@/lib/utils/format";
 import { DollarSign, TrendingUp } from "lucide-react";
 
-export default function IncomePage() {
+export default async function IncomePage() {
   const transactions = getTransactions();
   const assets = getAssets();
   const accounts = getAccounts();
   const config = getConfig();
 
-  setFxRates(getFxRates());
+  const fxRates = await fetchLiveFxRates(config.baseCurrency);
+  setFxRates(fxRates);
 
   const assetsMap = new Map(assets.map((a) => [a.id, a]));
   const accountsMap = new Map(accounts.map((a) => [a.id, a]));

@@ -1,7 +1,7 @@
 import { getHoldings, getAssets, getAccounts, getTransactions, getConfig } from "@/lib/data/loader";
 import { fetchAllPrices } from "@/lib/data/prices";
 import { buildPortfolioSnapshot } from "@/lib/calculations/portfolio";
-import { setFxRates, getFxRates } from "@/lib/utils/fx";
+import { setFxRates, fetchLiveFxRates } from "@/lib/utils/fx";
 import { HoldingsTable } from "@/components/holdings/HoldingsTable";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { StatTile } from "@/components/ui/StatTile";
@@ -17,8 +17,11 @@ export default async function HoldingsPage() {
   const transactions = getTransactions();
   const config = getConfig();
 
-  setFxRates(getFxRates());
-  const prices = await fetchAllPrices(assets);
+  const [fxRates, prices] = await Promise.all([
+    fetchLiveFxRates(config.baseCurrency),
+    fetchAllPrices(assets),
+  ]);
+  setFxRates(fxRates);
   const assetsMap = new Map(assets.map((a) => [a.id, a]));
   const accountsMap = new Map(accounts.map((a) => [a.id, a]));
   const snapshot = buildPortfolioSnapshot(holdings, assetsMap, accountsMap, prices, transactions);

@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import { getHoldings, getAssets, getAccounts, getTransactions, getConfig } from "@/lib/data/loader";
 import { fetchAllPrices } from "@/lib/data/prices";
 import { buildPortfolioSnapshot } from "@/lib/calculations/portfolio";
-import { setFxRates, getFxRates } from "@/lib/utils/fx";
+import { setFxRates, fetchLiveFxRates } from "@/lib/utils/fx";
 
 export async function GET() {
   try {
@@ -14,12 +14,12 @@ export async function GET() {
       getConfig(),
     ];
 
-    // Ensure FX rates are loaded
-    const fxRates = getFxRates();
+    // Fetch live FX rates and prices in parallel
+    const [fxRates, prices] = await Promise.all([
+      fetchLiveFxRates(config.baseCurrency),
+      fetchAllPrices(assets),
+    ]);
     setFxRates(fxRates);
-
-    // Fetch live prices
-    const prices = await fetchAllPrices(assets);
 
     // Build lookup maps
     const assetsMap = new Map(assets.map((a) => [a.id, a]));

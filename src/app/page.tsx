@@ -4,7 +4,7 @@ import { buildPortfolioSnapshot } from "@/lib/calculations/portfolio";
 import { buildPerformanceHistory } from "@/lib/calculations/performance";
 import { calcGoalProgress } from "@/lib/calculations/goals";
 import { extractIncomeEvents } from "@/lib/calculations/income";
-import { setFxRates, getFxRates } from "@/lib/utils/fx";
+import { setFxRates, fetchLiveFxRates } from "@/lib/utils/fx";
 import { NetWorthHero } from "@/components/dashboard/NetWorthHero";
 import { AllocationSection } from "@/components/dashboard/AllocationSection";
 import { TopMovers } from "@/components/dashboard/TopMovers";
@@ -26,9 +26,11 @@ async function getPortfolioData() {
   const goals = getGoals();
   const config = getConfig();
 
-  setFxRates(getFxRates());
-
-  const prices = await fetchAllPrices(assets);
+  const [fxRates, prices] = await Promise.all([
+    fetchLiveFxRates(config.baseCurrency),
+    fetchAllPrices(assets),
+  ]);
+  setFxRates(fxRates);
   const assetsMap = new Map(assets.map((a) => [a.id, a]));
   const accountsMap = new Map(accounts.map((a) => [a.id, a]));
 
