@@ -9,6 +9,7 @@ import {
   TrendingUp,
   DollarSign,
   Target,
+  Download,
 } from "lucide-react";
 
 const NAV_ITEMS = [
@@ -66,13 +67,23 @@ export function Sidebar() {
       </nav>
 
       {/* Footer */}
-      <div className="px-4 py-4 border-t border-[#21262d]">
-        <p className="text-[11px] text-[#484f58]">
-          Data in <span className="text-[#7d8590] font-medium">GBP</span>
-        </p>
-        <p className="text-[10px] text-[#484f58] mt-0.5">
-          Prices updated every 5 min
-        </p>
+      <div className="px-4 py-4 border-t border-[#21262d] space-y-3">
+        <a
+          href="/api/template"
+          download="portfolio.xlsx"
+          className="flex items-center gap-2 px-3 py-2 rounded-md text-xs text-[#7d8590] hover:text-[#c9d1d9] hover:bg-[#1c2128] transition-colors w-full"
+        >
+          <Download size={13} />
+          Download Excel template
+        </a>
+        <div>
+          <p className="text-[11px] text-[#484f58]">
+            Data in <span className="text-[#7d8590] font-medium">GBP</span>
+          </p>
+          <p className="text-[10px] text-[#484f58] mt-0.5">
+            Prices updated every 5 min
+          </p>
+        </div>
       </div>
     </aside>
   );
