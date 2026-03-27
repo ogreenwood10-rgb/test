@@ -2,7 +2,7 @@
 // Core domain types for the portfolio monitoring tool
 // ============================================================
 
-export type Currency = "GBP" | "USD" | "EUR" | "BTC" | "ETH" | "USDC" | "USDT";
+export type Currency = "GBP" | "USD" | "EUR" | "AUD" | "BTC" | "ETH" | "USDC" | "USDT";
 
 export type AssetClass = "crypto" | "equity" | "cash" | "property" | "other";
 

@@ -1,14 +1,15 @@
 {
-  "base": "GBP",
+  "base": "AUD",
   "rates": {
-    "GBP": 1.0,
-    "USD": 1.27,
-    "EUR": 1.16,
-    "BTC": 0.000012,
-    "ETH": 0.00038,
-    "USDC": 1.27,
-    "USDT": 1.27
+    "AUD":  1.0,
+    "USD":  0.63,
+    "GBP":  0.4950,
+    "EUR":  0.5880,
+    "BTC":  0.0000067,
+    "ETH":  0.000214,
+    "USDC": 0.63,
+    "USDT": 0.63
   },
-  "updatedAt": "2025-03-25T00:00:00Z",
-  "note": "These are fallback rates. Live rates fetched from API when available."
+  "updatedAt": "2026-03-27T00:00:00Z",
+  "note": "Fallback rates with AUD as base. Live rates fetched from Frankfurter API when available."
 }

@@ -176,8 +176,9 @@ export async function GET() {
       ["GBP",                "custom"],
       ["USD",                ""],
       ["EUR",                "isCash (Assets)"],
-      ["USDC",               "TRUE"],
-      ["USDT",               "FALSE"],
+      ["AUD",                "TRUE"],
+      ["USDC",               "FALSE"],
+      ["USDT",               ""],
     ];
     const wsRef = XLSX.utils.aoa_to_sheet(refRows);
     wsRef["!cols"] = [{ wch: 22 }, { wch: 22 }];

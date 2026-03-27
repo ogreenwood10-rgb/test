@@ -1,10 +1,10 @@
 {
-  "baseCurrency": "GBP",
+  "baseCurrency": "AUD",
   "displayName": "My Portfolio",
-  "targetNetWorth": 1000000,
-  "targetPassiveIncome": 3000,
-  "targetBtcStack": 1.0,
-  "growthAssumptionPct": 8,
-  "contributionMonthly": 2000,
-  "yieldAssumptionPct": 4
+  "targetNetWorth": 3862662,
+  "targetPassiveIncome": 10000,
+  "targetBtcStack": 5,
+  "growthAssumptionPct": 12,
+  "contributionMonthly": 10000,
+  "yieldAssumptionPct": 5
 }

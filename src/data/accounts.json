@@ -1,58 +1,116 @@
 [
   {
-    "id": "coinbase",
-    "name": "Coinbase",
+    "id": "crypto_exchange",
+    "name": "Crypto Exchange",
     "type": "exchange",
     "currency": "USD",
-    "platform": "Coinbase",
-    "notes": "Main crypto exchange"
+    "platform": "Exchange",
+    "notes": "Main crypto holdings — BTC, ETH, SOL, XRP, HYPE, SYRUP"
   },
   {
-    "id": "ledger",
-    "name": "Ledger Hardware Wallet",
-    "type": "wallet",
+    "id": "nexo_account",
+    "name": "Nexo",
+    "type": "exchange",
     "currency": "USD",
-    "platform": "Ledger",
-    "notes": "Cold storage"
+    "platform": "Nexo",
+    "notes": "NEXO tokens and USDC earning interest"
   },
   {
-    "id": "vanguard_isa",
-    "name": "Vanguard ISA",
-    "type": "isa",
-    "currency": "GBP",
-    "platform": "Vanguard",
-    "notes": "Stocks & Shares ISA"
-  },
-  {
-    "id": "trading212",
-    "name": "Trading 212 GIA",
+    "id": "hl_account",
+    "name": "Hargreaves Lansdown",
     "type": "brokerage",
     "currency": "GBP",
-    "platform": "Trading 212",
-    "notes": "General investment account"
+    "platform": "Hargreaves Lansdown",
+    "notes": "HL Multi-Manager Income & Growth fund"
   },
   {
-    "id": "barclays_current",
-    "name": "Barclays Current",
+    "id": "rolex_account",
+    "name": "Rolex Collection",
+    "type": "other",
+    "currency": "GBP",
+    "notes": "Rolex watch — collectible/appreciating asset"
+  },
+  {
+    "id": "wise_account",
+    "name": "Wise",
     "type": "bank",
     "currency": "GBP",
-    "platform": "Barclays",
-    "notes": "Main current account"
+    "platform": "Wise",
+    "notes": "GBP current account"
   },
   {
-    "id": "barclays_savings",
-    "name": "Barclays Savings",
+    "id": "halifax_account",
+    "name": "Halifax",
     "type": "bank",
     "currency": "GBP",
-    "platform": "Barclays",
-    "notes": "Easy access savings"
+    "platform": "Halifax",
+    "notes": "UK bank account"
   },
   {
-    "id": "kraken",
-    "name": "Kraken",
-    "type": "exchange",
-    "currency": "USD",
-    "platform": "Kraken",
-    "notes": "Staking + altcoins"
+    "id": "hsbc_account",
+    "name": "HSBC",
+    "type": "bank",
+    "currency": "GBP",
+    "platform": "HSBC",
+    "notes": "UK bank account"
+  },
+  {
+    "id": "ing_savings",
+    "name": "ING Savings",
+    "type": "bank",
+    "currency": "AUD",
+    "platform": "ING",
+    "notes": "AUD high-interest savings account"
+  },
+  {
+    "id": "spaceship_super",
+    "name": "Spaceship Super",
+    "type": "pension",
+    "currency": "AUD",
+    "platform": "Spaceship",
+    "notes": "Australian superannuation fund"
+  },
+  {
+    "id": "linqto",
+    "name": "Linqto",
+    "type": "brokerage",
+    "currency": "AUD",
+    "platform": "Linqto",
+    "notes": "Private equity / pre-IPO investments"
+  },
+  {
+    "id": "property_bond",
+    "name": "Property Bond",
+    "type": "other",
+    "currency": "AUD",
+    "notes": "AUD property bond investment"
+  },
+  {
+    "id": "car_account",
+    "name": "Vehicle",
+    "type": "other",
+    "currency": "AUD",
+    "notes": "Personal vehicle — depreciating asset"
+  },
+  {
+    "id": "duck_st",
+    "name": "32 Duck St BB7 1LP",
+    "type": "other",
+    "currency": "GBP",
+    "notes": "Buy-to-let property — Clitheroe"
+  },
+  {
+    "id": "hazelton_rd",
+    "name": "14 Hazelton Rd L14 1QF",
+    "type": "other",
+    "currency": "GBP",
+    "notes": "Buy-to-let property — Liverpool"
+  },
+  {
+    "id": "abbeystead_rd",
+    "name": "89 Abbeystead Rd L15 7JE",
+    "type": "other",
+    "currency": "GBP",
+    "notes": "Buy-to-let property — Liverpool"
   }
 ]

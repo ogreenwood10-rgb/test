@@ -27,12 +27,30 @@
     "isCash": false
   },
   {
-    "id": "LINK",
-    "symbol": "LINK",
-    "name": "Chainlink",
+    "id": "XRP",
+    "symbol": "XRP",
+    "name": "Ripple",
     "assetClass": "crypto",
     "currency": "USD",
-    "coingeckoId": "chainlink",
+    "coingeckoId": "ripple",
+    "isCash": false
+  },
+  {
+    "id": "NEXO",
+    "symbol": "NEXO",
+    "name": "Nexo",
+    "assetClass": "crypto",
+    "currency": "USD",
+    "coingeckoId": "nexo",
+    "isCash": false
+  },
+  {
+    "id": "HYPE",
+    "symbol": "HYPE",
+    "name": "HyperLiquid",
+    "assetClass": "crypto",
+    "currency": "USD",
+    "coingeckoId": "hyperliquid",
     "isCash": false
   },
   {
@@ -45,40 +63,31 @@
     "isCash": true
   },
   {
-    "id": "VUSA",
-    "symbol": "VUSA",
-    "name": "Vanguard S&P 500 ETF",
+    "id": "SYRUP",
+    "symbol": "SYRUP",
+    "name": "Maple Finance (SYRUP)",
+    "assetClass": "crypto",
+    "currency": "USD",
+    "coingeckoId": "maple-finance",
+    "isCash": false
+  },
+  {
+    "id": "HL_INDEX",
+    "symbol": "HL",
+    "name": "HL Multi-Manager Income & Growth",
     "assetClass": "equity",
     "currency": "GBP",
-    "yahooSymbol": "VUSA.L",
-    "isCash": false
+    "isCash": false,
+    "notes": "Hargreaves Lansdown managed fund — priced at book value"
   },
   {
-    "id": "VWRL",
-    "symbol": "VWRL",
-    "name": "Vanguard All-World ETF",
-    "assetClass": "equity",
+    "id": "ROLEX",
+    "symbol": "ROLEX",
+    "name": "Rolex Watch",
+    "assetClass": "other",
     "currency": "GBP",
-    "yahooSymbol": "VWRL.L",
-    "isCash": false
-  },
-  {
-    "id": "AAPL",
-    "symbol": "AAPL",
-    "name": "Apple Inc.",
-    "assetClass": "equity",
-    "currency": "USD",
-    "yahooSymbol": "AAPL",
-    "isCash": false
-  },
-  {
-    "id": "NVDA",
-    "symbol": "NVDA",
-    "name": "NVIDIA Corporation",
-    "assetClass": "equity",
-    "currency": "USD",
-    "yahooSymbol": "NVDA",
-    "isCash": false
+    "isCash": false,
+    "notes": "Luxury watch — collectible/appreciating asset"
   },
   {
     "id": "GBP_CASH",
@@ -89,11 +98,74 @@
     "isCash": true
   },
   {
-    "id": "USD_CASH",
-    "symbol": "USD",
-    "name": "US Dollar",
+    "id": "AUD_CASH",
+    "symbol": "AUD",
+    "name": "Australian Dollar",
     "assetClass": "cash",
-    "currency": "USD",
+    "currency": "AUD",
     "isCash": true
+  },
+  {
+    "id": "AUD_SUPER",
+    "symbol": "SUPER",
+    "name": "Spaceship Superannuation",
+    "assetClass": "other",
+    "currency": "AUD",
+    "isCash": false,
+    "notes": "Australian super fund — priced at book value"
+  },
+  {
+    "id": "AUD_LINQTO",
+    "symbol": "LINQTO",
+    "name": "Linqto Private Equity",
+    "assetClass": "equity",
+    "currency": "AUD",
+    "isCash": false,
+    "notes": "Pre-IPO private equity via Linqto — priced at cost"
+  },
+  {
+    "id": "AUD_PROPERTY_BOND",
+    "symbol": "PROPBOND",
+    "name": "Property Bond",
+    "assetClass": "other",
+    "currency": "AUD",
+    "isCash": false,
+    "notes": "AUD property bond"
+  },
+  {
+    "id": "AUD_CAR",
+    "symbol": "CAR",
+    "name": "Vehicle",
+    "assetClass": "other",
+    "currency": "AUD",
+    "isCash": false,
+    "notes": "Personal vehicle — depreciating asset"
+  },
+  {
+    "id": "DUCK_ST",
+    "symbol": "DUCK",
+    "name": "32 Duck St BB7 1LP — Equity",
+    "assetClass": "property",
+    "currency": "GBP",
+    "isCash": false,
+    "notes": "BTL property equity — Clitheroe"
+  },
+  {
+    "id": "HAZELTON_RD",
+    "symbol": "HAZ",
+    "name": "14 Hazelton Rd L14 1QF — Equity",
+    "assetClass": "property",
+    "currency": "GBP",
+    "isCash": false,
+    "notes": "BTL property equity — Liverpool"
+  },
+  {
+    "id": "ABBEYSTEAD_RD",
+    "symbol": "ABBEY",
+    "name": "89 Abbeystead Rd L15 7JE — Equity",
+    "assetClass": "property",
+    "currency": "GBP",
+    "isCash": false,
+    "notes": "BTL property equity — Liverpool"
   }
 ]

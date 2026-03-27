@@ -2,128 +2,206 @@
   {
     "id": "h1",
     "assetId": "BTC",
-    "accountId": "ledger",
-    "quantity": 0.42,
-    "avgCostPerUnit": 28500,
+    "accountId": "crypto_exchange",
+    "quantity": 5.03,
+    "avgCostPerUnit": 35000,
     "avgCostCurrency": "USD",
-    "notes": "Long-term cold storage",
+    "notes": "Core BTC position — accumulated via DCA",
     "tags": ["core", "long-term"]
   },
   {
     "id": "h2",
-    "assetId": "BTC",
-    "accountId": "coinbase",
-    "quantity": 0.08,
-    "avgCostPerUnit": 42000,
+    "assetId": "ETH",
+    "accountId": "crypto_exchange",
+    "quantity": 2.642,
+    "avgCostPerUnit": 2200,
     "avgCostCurrency": "USD",
-    "notes": "Trading allocation",
-    "tags": ["trading"]
+    "notes": "Ethereum position",
+    "tags": ["core"]
   },
   {
     "id": "h3",
-    "assetId": "ETH",
-    "accountId": "kraken",
-    "quantity": 3.5,
-    "avgCostPerUnit": 1800,
+    "assetId": "SOL",
+    "accountId": "crypto_exchange",
+    "quantity": 41.78,
+    "avgCostPerUnit": 60,
     "avgCostCurrency": "USD",
-    "notes": "Staked on Kraken, ~4% APY",
+    "notes": "Solana — staking yield ~6.5% APY",
     "tags": ["staking", "yield"]
   },
   {
     "id": "h4",
-    "assetId": "ETH",
-    "accountId": "ledger",
-    "quantity": 2.0,
-    "avgCostPerUnit": 2200,
+    "assetId": "XRP",
+    "accountId": "crypto_exchange",
+    "quantity": 2665,
+    "avgCostPerUnit": 0.50,
     "avgCostCurrency": "USD",
-    "notes": "Cold storage ETH",
-    "tags": ["core"]
-  },
-  {
-    "id": "h5",
-    "assetId": "SOL",
-    "accountId": "kraken",
-    "quantity": 45,
-    "avgCostPerUnit": 65,
-    "avgCostCurrency": "USD",
-    "notes": "Staked SOL, ~6.5% APY",
-    "tags": ["staking", "yield"]
-  },
-  {
-    "id": "h6",
-    "assetId": "LINK",
-    "accountId": "coinbase",
-    "quantity": 250,
-    "avgCostPerUnit": 8.5,
-    "avgCostCurrency": "USD",
+    "notes": "Ripple XRP position",
     "tags": []
   },
   {
-    "id": "h7",
-    "assetId": "USDC",
-    "accountId": "coinbase",
-    "quantity": 3500,
-    "avgCostPerUnit": 1,
+    "id": "h5",
+    "assetId": "HYPE",
+    "accountId": "crypto_exchange",
+    "quantity": 321.6,
+    "avgCostPerUnit": 12.00,
     "avgCostCurrency": "USD",
-    "notes": "Dry powder / stablecoin reserve",
-    "tags": ["cash", "stable"]
+    "notes": "HyperLiquid HYPE token",
+    "tags": []
+  },
+  {
+    "id": "h6",
+    "assetId": "SYRUP",
+    "accountId": "crypto_exchange",
+    "quantity": 14634,
+    "avgCostPerUnit": 0.10,
+    "avgCostCurrency": "USD",
+    "notes": "Maple Finance SYRUP — yield ~15% APY",
+    "tags": ["yield"]
+  },
+  {
+    "id": "h7",
+    "assetId": "NEXO",
+    "accountId": "nexo_account",
+    "quantity": 29338,
+    "avgCostPerUnit": 0.65,
+    "avgCostCurrency": "USD",
+    "notes": "NEXO tokens earning ~10% APY",
+    "tags": ["yield"]
   },
   {
     "id": "h8",
-    "assetId": "VUSA",
-    "accountId": "vanguard_isa",
-    "quantity": 320,
-    "avgCostPerUnit": 68.50,
-    "avgCostCurrency": "GBP",
-    "notes": "ISA core holding",
-    "tags": ["isa", "etf"]
+    "assetId": "USDC",
+    "accountId": "nexo_account",
+    "quantity": 152404,
+    "avgCostPerUnit": 1.00,
+    "avgCostCurrency": "USD",
+    "notes": "USDC stablecoin reserve on Nexo",
+    "tags": ["stable", "yield"]
   },
   {
     "id": "h9",
-    "assetId": "VWRL",
-    "accountId": "vanguard_isa",
-    "quantity": 180,
-    "avgCostPerUnit": 92.00,
+    "assetId": "HL_INDEX",
+    "accountId": "hl_account",
+    "quantity": 1,
+    "avgCostPerUnit": 173612,
     "avgCostCurrency": "GBP",
-    "notes": "Global diversification",
-    "tags": ["isa", "etf"]
+    "notes": "HL Multi-Manager fund — valued at book",
+    "tags": ["equity", "uk"]
   },
   {
     "id": "h10",
-    "assetId": "AAPL",
-    "accountId": "trading212",
-    "quantity": 25,
-    "avgCostPerUnit": 155,
-    "avgCostCurrency": "USD",
-    "notes": "Individual stock",
-    "tags": ["equity"]
+    "assetId": "ROLEX",
+    "accountId": "rolex_account",
+    "quantity": 1,
+    "avgCostPerUnit": 13123,
+    "avgCostCurrency": "GBP",
+    "notes": "Rolex watch — collectible",
+    "tags": ["collectible"]
   },
   {
     "id": "h11",
-    "assetId": "NVDA",
-    "accountId": "trading212",
-    "quantity": 15,
-    "avgCostPerUnit": 420,
-    "avgCostCurrency": "USD",
-    "notes": "AI/GPU play",
-    "tags": ["equity", "tech"]
+    "assetId": "GBP_CASH",
+    "accountId": "wise_account",
+    "quantity": 4480,
+    "avgCostPerUnit": 1,
+    "avgCostCurrency": "GBP",
+    "notes": "Wise GBP balance"
   },
   {
     "id": "h12",
     "assetId": "GBP_CASH",
-    "accountId": "barclays_current",
-    "quantity": 4500,
+    "accountId": "halifax_account",
+    "quantity": 1019,
     "avgCostPerUnit": 1,
     "avgCostCurrency": "GBP",
-    "notes": "Monthly expenses buffer"
+    "notes": "Halifax balance"
   },
   {
     "id": "h13",
     "assetId": "GBP_CASH",
-    "accountId": "barclays_savings",
-    "quantity": 18000,
+    "accountId": "hsbc_account",
+    "quantity": 4821,
     "avgCostPerUnit": 1,
     "avgCostCurrency": "GBP",
-    "notes": "Emergency fund + 4.5% AER savings"
+    "notes": "HSBC balance"
+  },
+  {
+    "id": "h14",
+    "assetId": "AUD_CASH",
+    "accountId": "ing_savings",
+    "quantity": 9500,
+    "avgCostPerUnit": 1,
+    "avgCostCurrency": "AUD",
+    "notes": "ING high-interest savings"
+  },
+  {
+    "id": "h15",
+    "assetId": "AUD_SUPER",
+    "accountId": "spaceship_super",
+    "quantity": 1,
+    "avgCostPerUnit": 196838,
+    "avgCostCurrency": "AUD",
+    "notes": "Spaceship Super fund balance",
+    "tags": ["super", "long-term"]
+  },
+  {
+    "id": "h16",
+    "assetId": "AUD_LINQTO",
+    "accountId": "linqto",
+    "quantity": 1,
+    "avgCostPerUnit": 140000,
+    "avgCostCurrency": "AUD",
+    "notes": "Linqto pre-IPO private equity",
+    "tags": ["private-equity"]
+  },
+  {
+    "id": "h17",
+    "assetId": "AUD_PROPERTY_BOND",
+    "accountId": "property_bond",
+    "quantity": 1,
+    "avgCostPerUnit": 3693,
+    "avgCostCurrency": "AUD",
+    "notes": "Property bond investment"
+  },
+  {
+    "id": "h18",
+    "assetId": "AUD_CAR",
+    "accountId": "car_account",
+    "quantity": 1,
+    "avgCostPerUnit": 17864,
+    "avgCostCurrency": "AUD",
+    "notes": "Vehicle — current estimated value",
+    "tags": ["depreciating"]
+  },
+  {
+    "id": "h19",
+    "assetId": "DUCK_ST",
+    "accountId": "duck_st",
+    "quantity": 1,
+    "avgCostPerUnit": 81942,
+    "avgCostCurrency": "GBP",
+    "notes": "Equity in 32 Duck St BTL (value - mortgage)",
+    "tags": ["property", "btl"]
+  },
+  {
+    "id": "h20",
+    "assetId": "HAZELTON_RD",
+    "accountId": "hazelton_rd",
+    "quantity": 1,
+    "avgCostPerUnit": 113425,
+    "avgCostCurrency": "GBP",
+    "notes": "Equity in 14 Hazelton Rd BTL (value - mortgage)",
+    "tags": ["property", "btl"]
+  },
+  {
+    "id": "h21",
+    "assetId": "ABBEYSTEAD_RD",
+    "accountId": "abbeystead_rd",
+    "quantity": 1,
+    "avgCostPerUnit": 99906,
+    "avgCostCurrency": "GBP",
+    "notes": "Equity in 89 Abbeystead Rd BTL (value - mortgage)",
+    "tags": ["property", "btl"]
   }
 ]

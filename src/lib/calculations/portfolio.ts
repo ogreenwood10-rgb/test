@@ -32,6 +32,7 @@ const CURRENCY_COLORS: Record<string, string> = {
   GBP:  "#10b981",
   USD:  "#3b82f6",
   EUR:  "#8b5cf6",
+  AUD:  "#f97316",
   BTC:  "#f59e0b",
   ETH:  "#6366f1",
   USDC: "#06b6d4",
@@ -40,12 +41,17 @@ const CURRENCY_COLORS: Record<string, string> = {
 
 // Annual yield rates by asset (where not derivable from transaction history)
 const DEFAULT_YIELD_RATES: Record<string, number> = {
-  ETH:      4.0,
-  SOL:      6.5,
-  GBP_CASH: 4.5, // savings account rate
-  VUSA:     1.3,
-  VWRL:     1.8,
-  AAPL:     0.5,
+  ETH:              4.0,
+  SOL:              6.5,
+  GBP_CASH:         4.5,
+  AUD_CASH:         4.5,
+  NEXO:            10.0,
+  SYRUP:           15.0,
+  AUD_SUPER:        7.0,
+  DUCK_ST:          3.5,
+  HAZELTON_RD:      3.5,
+  ABBEYSTEAD_RD:    3.5,
+  HL_INDEX:         4.0,
 };
 
 /** Calculate realised P&L for an asset from transaction history (FIFO). */
@@ -93,7 +99,8 @@ export function enrichHolding(
   totalPortfolioValueBase: number
 ): EnrichedHolding {
   const quote = prices[holding.assetId];
-  const currentPrice = quote?.price ?? 0;
+  // For manual assets (no price feed), fall back to avg cost so they still show a value
+  const currentPrice = quote?.price ?? holding.avgCostPerUnit;
   const priceCurrency = quote?.currency ?? asset.currency;
 
   const marketValueNative = holding.quantity * currentPrice;
@@ -147,9 +154,12 @@ export function buildPortfolioSnapshot(
   // First pass: compute market values to get total
   const rawValues = holdings.map((h) => {
     const asset = assetsMap.get(h.assetId);
+    if (!asset) return 0;
     const quote = prices[h.assetId];
-    if (!asset || !quote) return 0;
-    return toBase(h.quantity * quote.price, quote.currency);
+    // Fall back to avg cost for manual assets without a live price feed
+    const price = quote?.price ?? h.avgCostPerUnit;
+    const priceCurrency = quote?.currency ?? asset.currency;
+    return toBase(h.quantity * price, priceCurrency);
   });
   const totalMarketValueBase = rawValues.reduce((s, v) => s + v, 0);
 

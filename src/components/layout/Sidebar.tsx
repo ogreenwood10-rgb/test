@@ -78,7 +78,7 @@ export function Sidebar() {
         </a>
         <div>
           <p className="text-[11px] text-[#484f58]">
-            Data in <span className="text-[#7d8590] font-medium">GBP</span>
+            Data in <span className="text-[#7d8590] font-medium">AUD</span>
           </p>
           <p className="text-[10px] text-[#484f58] mt-0.5">
             Prices updated every 5 min

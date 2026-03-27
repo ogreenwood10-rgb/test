@@ -1,37 +1,46 @@
 [
   {
     "id": "g1",
-    "label": "Financial Independence",
+    "label": "FI Safety — A$2.19M",
     "type": "net_worth",
-    "targetValue": 1000000,
-    "targetCurrency": "GBP",
-    "deadline": "2035-01-01",
-    "notes": "FIRE number"
+    "targetValue": 2185577,
+    "targetCurrency": "AUD",
+    "deadline": "2026-12-31",
+    "notes": "Financial Independence Safety level — basic living costs covered by passive income"
   },
   {
     "id": "g2",
-    "label": "1 BTC Stack",
-    "type": "crypto_stack",
-    "targetValue": 1.0,
-    "targetCurrency": "BTC",
-    "assetId": "BTC",
-    "notes": "Accumulate 1 full BTC"
+    "label": "FI Target — A$3.86M",
+    "type": "net_worth",
+    "targetValue": 3862662,
+    "targetCurrency": "AUD",
+    "deadline": "2030-12-31",
+    "notes": "Financial Independence Target level — comfortable lifestyle fully funded"
   },
   {
     "id": "g3",
-    "label": "£3,000/mo Passive Income",
-    "type": "passive_income",
-    "targetValue": 3000,
-    "targetCurrency": "GBP",
-    "notes": "Cover living costs with passive income"
+    "label": "FI Abundance — A$5.54M",
+    "type": "net_worth",
+    "targetValue": 5539747,
+    "targetCurrency": "AUD",
+    "deadline": "2035-12-31",
+    "notes": "Financial Independence Abundance level — wealth beyond necessity"
   },
   {
     "id": "g4",
-    "label": "House Deposit",
-    "type": "net_worth",
-    "targetValue": 80000,
-    "targetCurrency": "GBP",
-    "deadline": "2027-06-01",
-    "notes": "First property purchase deposit"
+    "label": "5 BTC Stack",
+    "type": "crypto_stack",
+    "targetValue": 5,
+    "targetCurrency": "BTC",
+    "assetId": "BTC",
+    "notes": "Accumulate and hold 5 full BTC"
+  },
+  {
+    "id": "g5",
+    "label": "A$10,000/mo Passive Income",
+    "type": "passive_income",
+    "targetValue": 10000,
+    "targetCurrency": "AUD",
+    "notes": "Generate A$10k/month passively from investments and rental income"
   }
 ]
