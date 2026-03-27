@@ -68,7 +68,7 @@
     "name": "Maple Finance (SYRUP)",
     "assetClass": "crypto",
     "currency": "USD",
-    "coingeckoId": "maple-finance",
+    "coingeckoId": "syrup-token",
     "isCash": false
   },
   {

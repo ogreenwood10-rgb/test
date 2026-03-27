@@ -4,6 +4,7 @@ const CURRENCY_SYMBOLS: Record<string, string> = {
   GBP: "£",
   USD: "$",
   EUR: "€",
+  AUD: "A$",
   BTC: "₿",
   ETH: "Ξ",
   USDC: "$",

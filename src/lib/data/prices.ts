@@ -16,22 +16,20 @@ import type { Asset, PriceMap } from "@/types";
 // Prices are in the asset's native currency (see assets.json "currency" field)
 // ---------------------------------------------------------------------------
 const MOCK_PRICES: Record<string, { price: number; change24h: number; change7d: number }> = {
-  // Crypto (USD)
+  // Crypto (USD) — fallback prices used when CoinGecko is unavailable
   BTC:      { price: 87000,  change24h: 0, change7d: 0 },
   ETH:      { price: 2050,   change24h: 0, change7d: 0 },
   SOL:      { price: 140,    change24h: 0, change7d: 0 },
-  LINK:     { price: 14.50,  change24h: 0, change7d: 0 },
+  XRP:      { price: 2.50,   change24h: 0, change7d: 0 },
+  NEXO:     { price: 1.20,   change24h: 0, change7d: 0 },
+  HYPE:     { price: 20.00,  change24h: 0, change7d: 0 },
+  SYRUP:    { price: 0.15,   change24h: 0, change7d: 0 },
   USDC:     { price: 1.0,    change24h: 0, change7d: 0 },
   USDT:     { price: 1.0,    change24h: 0, change7d: 0 },
-  // Equities (native currency per assets.json)
-  VUSA:     { price: 97.20,  change24h: 0, change7d: 0 },
-  VWRL:     { price: 110.50, change24h: 0, change7d: 0 },
-  AAPL:     { price: 213.50, change24h: 0, change7d: 0 },
-  NVDA:     { price: 875.00, change24h: 0, change7d: 0 },
   // Cash — always 1 unit of their currency
   GBP_CASH: { price: 1.0, change24h: 0, change7d: 0 },
+  AUD_CASH: { price: 1.0, change24h: 0, change7d: 0 },
   USD_CASH: { price: 1.0, change24h: 0, change7d: 0 },
-  EUR_CASH: { price: 1.0, change24h: 0, change7d: 0 },
 };
 
 // ---------------------------------------------------------------------------
